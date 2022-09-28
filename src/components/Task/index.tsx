@@ -55,7 +55,7 @@ export function Task({ setTasks, tasks, setFinished, finished }: TaskProps) {
     return (
         <View style={style.container}>
 
-            <FlatList
+            <FlatList 
                 data={tasks}
                 keyExtractor={(task: any) => task.name}
                 renderItem={({item}) => {
